@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Victor(props) {
   const group = React.useRef()
-  const { nodes, materials, animations } = useGLTF('/models/vicetober_snapped.glb')
+  const { nodes, materials, animations } = useGLTF('portfolio/models/vicetober_snapped.glb')
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>
@@ -3227,4 +3227,4 @@ export function Victor(props) {
   )
 }
 
-useGLTF.preload('/models/vicetober_snapped.glb')
+useGLTF.preload('portfolio/models/vicetober_snapped.glb')
