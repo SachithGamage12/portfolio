@@ -12,8 +12,9 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Victor(props) {
   const group = React.useRef()
-  const { nodes, materials, animations } = useGLTF('https://drive.google.com/uc?export=download&id=1hBRuOKxVaG6A0xckeNcy5acqYE5iCts6
-')
+  const { nodes, materials, animations } = useGLTF(
+    "https://drive.google.com/uc?export=download&id=1hBRuOKxVaG6A0xckeNcy5acqYE5iCts6"
+  );
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>
@@ -3228,5 +3229,4 @@ export function Victor(props) {
   )
 }
 
-useGLTF.preload('https://drive.google.com/uc?export=download&id=1hBRuOKxVaG6A0xckeNcy5acqYE5iCts6
-')
+useGLTF.preload("https://drive.google.com/uc?export=download&id=1hBRuOKxVaG6A0xckeNcy5acqYE5iCts6")
